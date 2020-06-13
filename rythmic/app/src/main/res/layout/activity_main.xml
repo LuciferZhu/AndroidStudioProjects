@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/erciyuan" />
+
+    <android.widget.LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="古诗对对碰"
+            android:textColor="#300A24"
+            android:textSize="50dp"
+            android:shadowColor="#DB32AE"
+            android:shadowDx="8"
+            android:shadowDy="8"
+            android:layout_gravity="center_horizontal"
+            android:shadowRadius="1" />
+
+        <TextView
+            android:id="@+id/textview_upsnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上联：吾之旧友屌似汝"
+            android:textColor="#4CAF50"
+            android:textSize="35dp" />
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textview_downsnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下联："
+                android:textColor="#4CAF50"
+                android:textSize="35dp" />
+            <EditText
+                android:id="@+id/edit_downsnt"
+                android:layout_height="wrap_content"
+                android:layout_width="260dp"
+                android:hint=""
+                android:textSize="35dp"
+                android:textColor="#ff0000"
+                android:maxLength="7" />
+
+        </android.widget.LinearLayout>
+
+        <Button
+            android:id="@+id/bt_com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textColor="#000000"
+            android:textSize="35dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="clickCommit"
+            />
+
+
+    </android.widget.LinearLayout>
+
+</android.widget.RelativeLayout>
